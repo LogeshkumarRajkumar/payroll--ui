@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Register from './Registration/Registration';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
 import axios from 'axios';
 
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
