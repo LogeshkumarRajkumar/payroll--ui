@@ -26,7 +26,7 @@ class Register extends  Component {
   onSubmit(){
       this.setState({error_message: '', success_message: '' });
       axios.defaults.withCredentials = true;
-      axios.post('http://127.0.0.1:8000/authentication/register/', {
+      axios.post('http://payroll-service.herokuapp.com/authentication/register/', {
       headers: { 'Content-Type': 'application/json',
                  },
       name: this.state.company_name,
