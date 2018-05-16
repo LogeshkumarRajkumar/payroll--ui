@@ -3,7 +3,6 @@ import './Registration.css';
 import { Button, FormControl, Label } from 'react-bootstrap';
 import axios from 'axios';
 import settings from '../Config/configs.js'
-import dotenv from 'dotenv';
 class Register extends Component {
   constructor() {
     super();
@@ -25,7 +24,6 @@ class Register extends Component {
   }
 
   onSubmit() {
-console.log(dotenv.config());
     this.setState({ error_message: '', success_message: '' });
     axios.defaults.withCredentials = true;
     var base_url = '';
@@ -34,7 +32,7 @@ console.log(dotenv.config());
       base_url = settings.serice_url[process.env.environment];
     else
       base_url = settings.service_url.local;
-    axios.post(base_url + '/authentication/register/', {
+    axios.post('http://payroll-service.herokuapp.com/authentication/register/', {
       headers: {
         'Content-Type': 'application/json',
       },
