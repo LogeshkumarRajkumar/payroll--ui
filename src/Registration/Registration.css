@@ -3,8 +3,8 @@
   border: 1px green solid;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 7%;
@@ -34,7 +34,8 @@ padding-left: 40px;
 .error {
   color: red;
   font-weight: bolder;
-  font-family: fantasy;
+  font-size: 10px;
+  align-content: left;
 }
 
 .success {
