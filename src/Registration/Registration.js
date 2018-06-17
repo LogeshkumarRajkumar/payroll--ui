@@ -42,7 +42,7 @@ class Register extends Component {
           </div>
           <div>
             <Label className="label"> First Name </Label>
-            <FormControl onChange={this.handleChange} name="first_name" className="form-control" placeholder="Enter First name.."></FormControl>
+            <FormControl onChange={this.handleChange} name="first_name" className="form-control" placeholder="Enter First name"></FormControl>
           </div>
 
           <div>
@@ -50,7 +50,7 @@ class Register extends Component {
           </div>
           <div>
             <Label className="label"> Last Name </Label>
-            <FormControl onChange={this.handleChange} name="last_name" className="form-control" placeholder="Enter last name.."></FormControl>
+            <FormControl onChange={this.handleChange} name="last_name" className="form-control" placeholder="Enter last name"></FormControl>
           </div>
 
           <div>
@@ -58,7 +58,7 @@ class Register extends Component {
           </div>
           <div>
             <Label className="label"> Email </Label>
-            <FormControl onChange={this.handleChange} name="email" className="form-control" placeholder="Enter valid email-id.."></FormControl>
+            <FormControl onChange={this.handleChange} name="email" className="form-control" placeholder="Enter valid email-id"></FormControl>
           </div>
 
           <div>
@@ -66,7 +66,7 @@ class Register extends Component {
           </div>
           <div>
             <Label className="label"> Company Name </Label>
-            <FormControl onChange={this.handleChange} name="company_name" className="form-control" placeholder="Enter your organisation name.."></FormControl>
+            <FormControl onChange={this.handleChange} name="company_name" className="form-control" placeholder="Enter your organisation name"></FormControl>
           </div>
 
           <div>

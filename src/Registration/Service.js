@@ -6,7 +6,7 @@ const postRequest = (data, password) => {
         errorMessages: {}
     }
     axios.defaults.withCredentials = true;
-    return axios.post('http://127.0.0.1:8000/users/', {
+    return axios.post('http://payroll-service.herokuapp.com/users/', {
       headers: {
         'Content-Type': 'application/json',
       },
@@ -28,7 +28,6 @@ const postRequest = (data, password) => {
         response.errorMessages['last_name']=err.response.data.creator.last_name;
         response.errorMessages['email']=err.response.data.creator.email;
         response.errorMessages['password']=err.response.data.creator.password;
-        console.log('sss',err.response.data);
         return response;
     });
 };
